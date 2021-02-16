@@ -2,17 +2,14 @@ http:
   port: ${PORT:-8080}
 admin:
   port: 9876
-  host: ${LOCAL_IP:-localhost}
 ##################################################################################################
 apiEndpoints:
   api:
-    host: ${LOCAL_IP:-localhost}
     paths: ["/ip", "/ip/*"]
   auth:
     paths: ["/auth/", "/auth/*"]
   users:
     methods: "GET,POST,PUT,PATCH,DELETE"
-    host: ${LOCAL_IP:-localhost}
     paths: ["/users", "/users/*"]
   account:
     host: ${LOCAL_IP:-localhost}
