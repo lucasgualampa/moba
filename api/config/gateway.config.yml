@@ -5,11 +5,13 @@ admin:
 ##################################################################################################
 apiEndpoints:
   api:
+    host: ${LOCAL_IP:-localhost}
     paths: ["/ip", "/ip/*"]
   auth:
     paths: ["/auth/", "/auth/*"]
   users:
     methods: "GET,POST,PUT,PATCH,DELETE"
+    host: ${LOCAL_IP:-localhost}
     paths: ["/users", "/users/*"]
   account:
     host: ${LOCAL_IP:-localhost}
@@ -24,7 +26,6 @@ apiEndpoints:
     host: ${LOCAL_IP:-localhost}
     paths: ["/email", "/email/*"]
   contact:
-    host: ${LOCAL_IP:-localhost}
     paths: ["/contacts", "/contacts/*"]
   statistics:
     host: ${LOCAL_IP:-localhost}
@@ -33,7 +34,6 @@ apiEndpoints:
     host: ${LOCAL_IP:-localhost}
     paths: ["/whatsapp", "/whatsapp/*"]
   interoperabilities:
-    host: ${LOCAL_IP:-localhost}
     paths: ["/interoperabilities", "/interoperabilities/*"]
 
 ##################################################################################################
