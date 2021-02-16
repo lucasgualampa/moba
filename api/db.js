@@ -7,6 +7,9 @@ const crypto = require('crypto');
 const {
   DB_USER, DB_PASSWORD, DB_HOST, DB_NAME
 } = process.env;
+
+console.log("PORT", process.env.PORT);
+
 const sequelize = 
 process.env.NODE_ENV === "production"
 ? new Sequelize({
