@@ -6,33 +6,25 @@ admin:
 ##################################################################################################
 apiEndpoints:
   api:
-    host: ${LOCAL_IP:-localhost}
     paths: ["/ip", "/ip/*"]
   auth:
     paths: ["/auth/", "/auth/*"]
   users:
     methods: "GET,POST,PUT,PATCH,DELETE"
-    host: ${LOCAL_IP:-localhost}
     paths: ["/users", "/users/*"]
   account:
-    host: ${LOCAL_IP:-localhost}
     paths: ["/accounts", "/accounts/*"]
   admin:
-    host: ${LOCAL_IP:-localhost}
     paths: "/admin/*"
   transaction:
-    host: ${LOCAL_IP:-localhost}
     paths: ["/transaction", "/transaction/*"]
   email:
-    host: ${LOCAL_IP:-localhost}
     paths: ["/email", "/email/*"]
   contact:
     paths: ["/contacts", "/contacts/*"]
   statistics:
-    host: ${LOCAL_IP:-localhost}
     paths: ["/statistics", "/statistics/*"]
   whatsapp:
-    host: ${LOCAL_IP:-localhost}
     paths: ["/whatsapp", "/whatsapp/*"]
   interoperabilities:
     paths: ["/interoperabilities", "/interoperabilities/*"]
